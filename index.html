@@ -1,634 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Share Hub</title>
+    <title>History and Evolution of AI</title>
     <meta
       name="description"
-      content="AI Share Hub is a futuristic landing page for AI innovation, GPU compute, agent deployment, and monetization."
+      content="A simple static website about the history and evolution of artificial intelligence."
     />
-    <meta property="og:title" content="AI Share Hub" />
-    <meta
-      property="og:description"
-      content="Build, train, launch, and monetize AI in one ecosystem."
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
     />
-    <meta property="og:image" content="./public/logo.png" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AI Share Hub" />
-    <meta
-      name="twitter:description"
-      content="A dark futuristic landing page for AI infrastructure, research, and community tooling."
-    />
-    <meta name="twitter:image" content="./public/logo.png" />
-    <link rel="icon" type="image/png" href="./public/logo.png" />
-    <link rel="stylesheet" href="./src/index.css" />
-    <link rel="stylesheet" href="./src/App.css" />
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-shell" id="home">
-      <div class="page-noise" aria-hidden="true"></div>
-      <div class="page-grid" aria-hidden="true"></div>
-
-      <div class="hero-screen">
-        <div class="hero-orb-scene" aria-hidden="true">
-          <div class="hero-ai-cloud">
-            <span class="hero-ai-lettering">AI</span>
-          </div>
-          <div class="hero-orb hero-orb-main"></div>
-          <div class="hero-orb hero-orb-top"></div>
-          <div class="hero-orb hero-orb-bottom"></div>
-          <div class="hero-orb hero-orb-far"></div>
-        </div>
-
-        <header class="site-header">
-          <nav class="site-nav" aria-label="Primary">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#exhibits" class="nav-link">Exhibits</a>
-            <a href="#about" class="nav-link">About</a>
-          </nav>
-
-          <a class="brand-badge" href="#home" aria-label="AI Evolution home">
-            <span>AI Evolution</span>
-          </a>
-
-          <a class="launch-button" href="#timeline">View Timeline</a>
-        </header>
-
-        <section class="hero-section" id="about">
-          <div class="hero-article-shell">
-            <div class="hero-article">
-              <div class="hero-divider" aria-hidden="true"></div>
-
-              <div class="hero-meta">
-                <span
-                  class="typed-meta"
-                  data-text="Updated Apr 7, 2026"
-                  aria-label="Updated Apr 7, 2026"
-                ></span>
-                <span>by AI Share Core Team</span>
-              </div>
-
-              <div class="hero-story">
-                <p class="eyebrow">Exhibit / Artificial intelligence</p>
-                <h1>History and Evolution of AI</h1>
-                <p class="hero-text">
-                  Trace the journey of artificial intelligence from early symbolic
-                  reasoning and expert systems to machine learning, deep neural
-                  networks, and the generative models shaping modern technology.
-                </p>
-
-                <div class="hero-actions">
-                  <a class="button button-primary" href="#timeline">View Timeline</a>
-                  <a class="button button-secondary" href="#exhibits"
-                    >Explore Platform</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">AI Midterm Project</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#impact">Impact</a>
+        </nav>
       </div>
+    </header>
 
-      <main>
-        <section class="intro-section" id="intro">
-          <div class="intro-shell">
-            <div class="intro-left">
-              <div class="intro-pill">
-                <span class="intro-pill-dot" aria-hidden="true"></span>
-                <span>About This Exhibit</span>
-              </div>
-
-              <h2
-                class="typed-heading"
-                data-text="Pioneering AI research to transform theory into real-world systems."
-                aria-label="Pioneering AI research to transform theory into real-world systems."
-              ></h2>
-            </div>
-
-            <div class="intro-right">
-              <p class="intro-lead">
-                This exhibit explores how artificial intelligence evolved from
-                foundational ideas and laboratory experiments into practical tools
-                that shape science, industry, and daily life.
-              </p>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">IS117 Midterm Project</p>
+            <h1>History and Evolution of Artificial Intelligence</h1>
+            <p class="hero-text">
+              This website gives a simple overview of how artificial intelligence
+              developed from an early idea in computer science into one of the
+              most important technologies used today.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#timeline">View Timeline</a>
+              <a class="button button-secondary" href="#about">Learn More</a>
             </div>
           </div>
-        </section>
 
-        <section class="timeline-section" id="timeline">
-          <div class="timeline-shell">
-            <div class="timeline-header">
-              <p class="eyebrow">Timeline / evolution of AI</p>
-              <h2>From theory to generative systems</h2>
-              <p class="timeline-intro">
-                Explore the key eras that transformed artificial intelligence from
-                an academic question into a global technological force.
-              </p>
-            </div>
+          <aside class="hero-card">
+            <h2>Quick Summary</h2>
+            <p>
+              AI began as a research question about whether machines could think.
+              Over time, it grew through expert systems, machine learning, deep
+              learning, and now generative AI.
+            </p>
+            <ul>
+              <li>1950s: early theories and the Turing Test</li>
+              <li>1980s: expert systems and rule-based programs</li>
+              <li>2010s: deep learning expands AI capabilities</li>
+              <li>Today: AI is used in daily life, business, and education</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
 
-            <div class="timeline-carousel">
-              <button
-                class="timeline-arrow timeline-arrow-prev"
-                type="button"
-                aria-label="Previous timeline slide"
-              >
-                Prev
-              </button>
-
-              <div class="timeline-stage">
-                <div class="timeline-track">
-                  <article class="timeline-card">
-                    <div class="timeline-card-media">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Alan_turing_header.jpg"
-                        alt="Portrait of Alan Turing"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-
-                    <div class="timeline-card-body">
-                      <p class="timeline-era">1950</p>
-                      <h3>The Idea Begins</h3>
-                      <p>
-                        The modern conversation about artificial intelligence begins
-                        when Alan Turing asks whether machines can think. His 1950
-                        paper reframed intelligence as something that could be tested,
-                        modeled, and eventually engineered.
-                      </p>
-
-                      <ul class="timeline-points">
-                        <li>
-                          Turing proposes the imitation game, later called the
-                          Turing Test.
-                        </li>
-                        <li>
-                          Researchers begin linking logic, language, and computation
-                          to human reasoning.
-                        </li>
-                        <li>
-                          The field gains a conceptual foundation before the term AI
-                          is formally popularized in 1956.
-                        </li>
-                      </ul>
-                    </div>
-                  </article>
-
-                  <article class="timeline-card">
-                    <div class="timeline-card-media">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/c/c3/SRI_Shakey_robot%2C_1969%2C_Computer_History_Museum.jpg"
-                        alt="Shakey the robot at SRI"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-
-                    <div class="timeline-card-body">
-                      <p class="timeline-era">1960s-1980s</p>
-                      <h3>Early Research</h3>
-                      <p>
-                        Early AI labs produce programs that solve algebra, simulate
-                        conversation, and reason about simple environments. Systems
-                        such as ELIZA and Shakey the robot show what is possible, but
-                        hardware limits and scarce data keep progress uneven.
-                      </p>
-
-                      <ul class="timeline-points">
-                        <li>
-                          Rule-based systems and symbolic reasoning dominate the
-                          first wave of AI research.
-                        </li>
-                        <li>
-                          Expert systems perform well in narrow tasks but struggle
-                          outside carefully defined domains.
-                        </li>
-                        <li>
-                          Periods of high optimism are followed by funding cuts known
-                          as AI winters.
-                        </li>
-                      </ul>
-                    </div>
-                  </article>
-
-                  <article class="timeline-card">
-                    <div class="timeline-card-media">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/23/Google_Search_screenshot_in_2025_%28EN%29.png"
-                        alt="Google Search interface"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-
-                    <div class="timeline-card-body">
-                      <p class="timeline-era">2000s</p>
-                      <h3>Everyday Integration</h3>
-                      <p>
-                        Artificial intelligence becomes part of ordinary digital
-                        life. Search ranking, recommendations, spam filtering, ad
-                        targeting, and voice features begin shaping what people see,
-                        buy, and use every day, often without being labeled as AI.
-                      </p>
-
-                      <ul class="timeline-points">
-                        <li>
-                          Search engines use learning systems to improve relevance at
-                          web scale.
-                        </li>
-                        <li>
-                          Recommendation models personalize music, shopping, video,
-                          and social feeds.
-                        </li>
-                        <li>
-                          Early assistants and mobile computing normalize
-                          AI-driven convenience.
-                        </li>
-                      </ul>
-                    </div>
-                  </article>
-
-                  <article class="timeline-card">
-                    <div class="timeline-card-media">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/26/Deep_Learning.jpg"
-                        alt="Visualization representing deep learning"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-
-                    <div class="timeline-card-body">
-                      <p class="timeline-era">2010s</p>
-                      <h3>Machine Learning Growth</h3>
-                      <p>
-                        The 2010s mark a major acceleration. Larger datasets, GPU
-                        computing, and breakthroughs in deep learning make AI
-                        dramatically better at image recognition, language
-                        processing, translation, speech, and strategic
-                        decision-making.
-                      </p>
-
-                      <ul class="timeline-points">
-                        <li>
-                          ImageNet-era breakthroughs prove that deep neural networks
-                          can outperform earlier approaches.
-                        </li>
-                        <li>
-                          Systems such as AlphaGo and modern speech recognition show
-                          rapid capability gains.
-                        </li>
-                        <li>
-                          Cloud infrastructure makes advanced training more
-                          accessible to startups and research labs.
-                        </li>
-                      </ul>
-                    </div>
-                  </article>
-
-                  <article class="timeline-card">
-                    <div class="timeline-card-media">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/8/82/Astronaut_Riding_a_Horse_%28SD3.5%29.webp"
-                        alt="AI-generated artwork from a text-to-image model"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-
-                    <div class="timeline-card-body">
-                      <p class="timeline-era">2020s</p>
-                      <h3>Generative AI Era</h3>
-                      <p>
-                        Generative AI pushes the field into mainstream culture. Large
-                        language models and image generators can now create text,
-                        code, pictures, and workflows used by millions of people in
-                        schools, offices, studios, and products.
-                      </p>
-
-                      <ul class="timeline-points">
-                        <li>
-                          AI systems move from classification and prediction into
-                          content generation.
-                        </li>
-                        <li>
-                          Chatbots, copilots, and multimodal tools reshape how
-                          people learn and work.
-                        </li>
-                        <li>
-                          Debates about safety, jobs, copyright, and governance
-                          become central to AI adoption.
-                        </li>
-                      </ul>
-                    </div>
-                  </article>
-
-                  <article class="timeline-card">
-                    <div class="timeline-card-media">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Google_AI_Studio_icon_%28July_2025%29.svg/960px-Google_AI_Studio_icon_%28July_2025%29.svg.png"
-                        alt="Google AI Studio icon representing modern AI tooling"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-
-                    <div class="timeline-card-body">
-                      <p class="timeline-era">2026</p>
-                      <h3>Agentic AI in Production</h3>
-                      <p>
-                        By 2026, the conversation expands beyond chat into agentic
-                        AI: systems that can reason across steps, use tools, work
-                        with files, and help complete real tasks inside software
-                        workflows. AI becomes less of a demo and more of an
-                        operational layer.
-                      </p>
-
-                      <ul class="timeline-points">
-                        <li>
-                          More platforms position AI as a coworker that can plan,
-                          execute, and coordinate multistep work.
-                        </li>
-                        <li>
-                          Security, supervision, and prompt-injection defenses become
-                          a core design challenge for deployed agents.
-                        </li>
-                        <li>
-                          The field shifts toward AI-native products where
-                          assistance is embedded directly into research, coding, and
-                          enterprise operations.
-                        </li>
-                      </ul>
-                    </div>
-                  </article>
-                </div>
-              </div>
-
-              <button
-                class="timeline-arrow timeline-arrow-next"
-                type="button"
-                aria-label="Next timeline slide"
-              >
-                Next
-              </button>
-            </div>
-
-            <div class="timeline-pagination" aria-label="Timeline slide navigation">
-              <button
-                type="button"
-                class="timeline-dot is-active"
-                data-index="0"
-                aria-label="Go to 1950"
-                aria-pressed="true"
-              ></button>
-              <button
-                type="button"
-                class="timeline-dot"
-                data-index="1"
-                aria-label="Go to 1960s-1980s"
-                aria-pressed="false"
-              ></button>
-              <button
-                type="button"
-                class="timeline-dot"
-                data-index="2"
-                aria-label="Go to 2000s"
-                aria-pressed="false"
-              ></button>
-              <button
-                type="button"
-                class="timeline-dot"
-                data-index="3"
-                aria-label="Go to 2010s"
-                aria-pressed="false"
-              ></button>
-              <button
-                type="button"
-                class="timeline-dot"
-                data-index="4"
-                aria-label="Go to 2020s"
-                aria-pressed="false"
-              ></button>
-              <button
-                type="button"
-                class="timeline-dot"
-                data-index="5"
-                aria-label="Go to 2026"
-                aria-pressed="false"
-              ></button>
-            </div>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>What Is Artificial Intelligence?</h2>
           </div>
-        </section>
-
-        <section class="exhibits-section" id="exhibits">
-          <div class="exhibits-shell">
-            <div class="exhibits-content">
-              <div class="section-heading">
-                <p class="eyebrow">Exhibits Preview</p>
-                <h2>
-                  Explore key moments in the development of artificial intelligence
-                  through a series of curated exhibits.
-                </h2>
-                <p class="exhibits-copy">
-                  Move through defining eras of AI history, from foundational ideas
-                  and early research labs to the systems, products, and debates
-                  shaping the field today.
-                </p>
-              </div>
-
-              <div class="exhibits-button-wrap">
-                <a class="button button-primary" href="#timeline">Browse Timeline</a>
-              </div>
-
-              <div class="exhibits-counter">
-                <h3>05</h3>
-                <h4>Featured exhibits</h4>
-                <p>A compact preview of the major themes visitors will explore.</p>
-              </div>
-            </div>
-
-            <div class="exhibits-list">
-              <article class="exhibit-item" style="--exhibit-delay: 0ms">
-                <div class="exhibit-index" aria-hidden="true">01</div>
-                <div class="exhibit-text">
-                  <h3>The Idea Begins</h3>
-                  <p>
-                    The origin of artificial intelligence as a theoretical concept,
-                    from early questions about machine thought to the first formal
-                    frameworks.
-                  </p>
-                </div>
-              </article>
-
-              <article class="exhibit-item" style="--exhibit-delay: 90ms">
-                <div class="exhibit-index" aria-hidden="true">02</div>
-                <div class="exhibit-text">
-                  <h3>Early AI Research</h3>
-                  <p>
-                    The first systems, experiments, and limitations of early AI,
-                    including symbolic reasoning, expert systems, and the first AI
-                    winters.
-                  </p>
-                </div>
-              </article>
-
-              <article class="exhibit-item" style="--exhibit-delay: 180ms">
-                <div class="exhibit-index" aria-hidden="true">03</div>
-                <div class="exhibit-text">
-                  <h3>AI in Everyday Life</h3>
-                  <p>
-                    How artificial intelligence moved into ordinary experiences
-                    through search, ranking systems, recommendations, speech tools,
-                    and mobile devices.
-                  </p>
-                </div>
-              </article>
-
-              <article class="exhibit-item" style="--exhibit-delay: 270ms">
-                <div class="exhibit-index" aria-hidden="true">04</div>
-                <div class="exhibit-text">
-                  <h3>The Modern AI Revolution</h3>
-                  <p>
-                    The rise of powerful machine learning systems, deep neural
-                    networks, large-scale compute, and the rapid acceleration of AI
-                    capability.
-                  </p>
-                </div>
-              </article>
-
-              <article class="exhibit-item" style="--exhibit-delay: 360ms">
-                <div class="exhibit-index" aria-hidden="true">05</div>
-                <div class="exhibit-text">
-                  <h3>The Future of AI</h3>
-                  <p>
-                    The possibilities, risks, and direction of artificial
-                    intelligence as society navigates autonomy, creativity,
-                    governance, and human collaboration.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="innovator-section" id="innovator">
-          <div class="innovator-shell">
-            <div class="innovator-media">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Alan_turing_header.jpg"
-                alt="Portrait of Alan Turing"
-                class="innovator-image"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-
-            <div class="innovator-content">
-              <p class="eyebrow">Featured Innovator</p>
-              <h2>Alan Turing</h2>
-              <p class="innovator-role">
-                Mathematician, logician, and early AI visionary
-              </p>
-              <p class="innovator-summary">
-                Alan Turing helped define the intellectual foundations of
-                artificial intelligence by asking whether machines could think and
-                by treating reasoning as something that computation could model.
-              </p>
-
-              <ul class="innovator-highlights">
-                <li>
-                  Published “Computing Machinery and Intelligence” in 1950,
-                  introducing the question that shaped the field.
-                </li>
-                <li>
-                  Inspired later work in machine reasoning, language, symbolic
-                  logic, and intelligent systems.
-                </li>
-                <li>
-                  Remains one of the most referenced figures in the history of AI,
-                  computer science, and modern computation.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="why-section" id="why-it-matters">
-          <div class="why-shell">
-            <div class="why-content">
-              <p class="eyebrow">Why It Matters</p>
-              <h2>
-                Artificial intelligence is not just a technology story. It is a
-                human one.
-              </h2>
-              <p class="why-copy">
-                Learning how AI evolved helps people understand why it matters now.
-                The systems discussed in this exhibit influence communication,
-                creativity, labor, access to information, and the way societies
-                make decisions about the future.
-              </p>
-            </div>
-
-            <div class="why-cards">
-              <article class="why-card">
-                <h3>Daily Decisions</h3>
-                <p>
-                  AI already shapes what people read, watch, buy, and trust through
-                  ranking, recommendation, filtering, and prediction systems.
-                </p>
-              </article>
-
-              <article class="why-card">
-                <h3>Work and Creativity</h3>
-                <p>
-                  From code generation to design tools and research support, AI
-                  changes how individuals and teams create, analyze, and produce
-                  work.
-                </p>
-              </article>
-
-              <article class="why-card">
-                <h3>Responsibility</h3>
-                <p>
-                  Understanding AI history helps people ask better questions about
-                  fairness, safety, labor, transparency, and who benefits from
-                  automation.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <footer class="site-footer">
-          <div class="footer-shell">
-            <div class="footer-brand">
-              <p class="eyebrow">AI Evolution</p>
-              <h2>
-                Tracing the past, present, and future of artificial intelligence.
-              </h2>
-            </div>
-
-            <nav class="footer-nav" aria-label="Footer">
-              <a href="#home">Home</a>
-              <a href="#timeline">Timeline</a>
-              <a href="#exhibits">Exhibits</a>
-              <a href="#innovator">Innovator</a>
-              <a href="#why-it-matters">Why It Matters</a>
-            </nav>
-
-            <div class="footer-note">
+          <div class="two-column">
+            <div class="card">
               <p>
-                Built as a curated digital exhibit on the history and evolution of
-                AI.
+                Artificial intelligence is the ability of a computer system to
+                perform tasks that usually require human thinking. These tasks can
+                include learning, problem solving, recognizing speech, identifying
+                images, and making decisions.
               </p>
-              <p>2026 AI Evolution. All rights reserved.</p>
+            </div>
+            <div class="card">
+              <p>
+                The development of AI did not happen all at once. It grew through
+                decades of research, improvements in hardware, access to large
+                amounts of data, and the creation of stronger learning models.
+              </p>
             </div>
           </div>
-        </footer>
-      </main>
-    </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="timeline">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Timeline</p>
+            <h2>Major Moments in AI History</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="year">1950</span>
+              <h3>Alan Turing's Question</h3>
+              <p>
+                Alan Turing published a paper asking if machines could think. He
+                also introduced the idea behind the Turing Test.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="year">1956</span>
+              <h3>Dartmouth Conference</h3>
+              <p>
+                This conference is often considered the official starting point of
+                AI as a field of study.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="year">1980s</span>
+              <h3>Expert Systems</h3>
+              <p>
+                Expert systems became popular because they could follow rules to
+                make decisions in specialized areas such as medicine and business.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="year">2010s</span>
+              <h3>Deep Learning Growth</h3>
+              <p>
+                Better processors and larger datasets helped deep learning models
+                improve image recognition, speech recognition, and automation.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="year">Today</span>
+              <h3>Generative AI</h3>
+              <p>
+                Modern AI tools can generate text, images, music, and code,
+                changing how people work, learn, and create.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="impact">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Impact</p>
+            <h2>How AI Affects Society</h2>
+          </div>
+
+          <div class="impact-grid">
+            <article class="card">
+              <h3>Education</h3>
+              <p>
+                AI supports tutoring tools, language learning, research support,
+                and personalized study help for students.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Healthcare</h3>
+              <p>
+                Doctors and researchers use AI to help analyze medical images,
+                monitor patients, and improve diagnostics.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Everyday Life</h3>
+              <p>
+                Recommendation systems, virtual assistants, maps, and smart devices
+                all show how AI has become part of normal daily routines.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Built as a simple static HTML and CSS site for GitHub Pages.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
   </body>
 </html>
