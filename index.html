@@ -3,187 +3,452 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>History and Evolution of AI</title>
+    <title>History of AI | Museum Exhibit Experience</title>
     <meta
       name="description"
-      content="A simple static website about the history and evolution of artificial intelligence."
+      content="A museum-style editorial exhibit tracing the history, breakthroughs, and social impact of artificial intelligence."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="#top">AI Midterm Project</a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#timeline">Timeline</a>
-          <a href="#impact">Impact</a>
+      <div class="grid-container nav-grid">
+        <a class="brand" href="#top" aria-label="History of AI home">
+          History of AI
+        </a>
+        <nav class="site-nav" aria-label="Primary exhibit navigation">
+          <a href="#orientation">Orientation</a>
+          <a href="#gallery-one">Gallery I</a>
+          <a href="#gallery-two">Gallery II</a>
+          <a href="#gallery-three">Gallery III</a>
+          <a href="#gallery-four">Gallery IV</a>
         </nav>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">IS117 Midterm Project</p>
-            <h1>History and Evolution of Artificial Intelligence</h1>
-            <p class="hero-text">
-              This website gives a simple overview of how artificial intelligence
-              developed from an early idea in computer science into one of the
-              most important technologies used today.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#timeline">View Timeline</a>
-              <a class="button button-secondary" href="#about">Learn More</a>
+      <section class="hero exhibit-hero" aria-labelledby="hero-title">
+        <div class="grid-container hero-grid">
+          <div class="hero-left">
+            <div class="hero-kicker">IS117 Midterm Project / Museum Edition</div>
+            <div class="hero-copy">
+              <p class="eyebrow">Permanent Collection</p>
+              <h1 id="hero-title">The History of Artificial Intelligence</h1>
+              <p class="hero-text">
+                An editorial museum experience tracing the machine intelligence
+                question from philosophical provocation to global infrastructure.
+              </p>
             </div>
           </div>
-
-          <aside class="hero-card">
-            <h2>Quick Summary</h2>
+          <aside class="hero-panel" aria-label="Exhibit information">
+            <span class="panel-number">1950-2026</span>
+            <h2>Four galleries. One discipline in motion.</h2>
             <p>
-              AI began as a research question about whether machines could think.
-              Over time, it grew through expert systems, machine learning, deep
-              learning, and now generative AI.
+              Move through the exhibit as a guided tour: each section builds from
+              foundational theory to contemporary generative systems and the
+              public responsibilities surrounding them.
             </p>
-            <ul>
-              <li>1950s: early theories and the Turing Test</li>
-              <li>1980s: expert systems and rule-based programs</li>
-              <li>2010s: deep learning expands AI capabilities</li>
-              <li>Today: AI is used in daily life, business, and education</li>
-            </ul>
           </aside>
         </div>
       </section>
 
-      <section class="section" id="about">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">About</p>
-            <h2>What Is Artificial Intelligence?</h2>
-          </div>
-          <div class="two-column">
-            <div class="card">
-              <p>
-                Artificial intelligence is the ability of a computer system to
-                perform tasks that usually require human thinking. These tasks can
-                include learning, problem solving, recognizing speech, identifying
-                images, and making decisions.
-              </p>
-            </div>
-            <div class="card">
-              <p>
-                The development of AI did not happen all at once. It grew through
-                decades of research, improvements in hardware, access to large
-                amounts of data, and the creation of stronger learning models.
-              </p>
-            </div>
-          </div>
+      <section class="authority-strip" aria-label="Authority quotes">
+        <div class="grid-container quote-grid">
+          <figure class="quote-card">
+            <blockquote>
+              "I propose to consider the question, 'Can machines think?'"
+            </blockquote>
+            <figcaption>Alan Turing, 1950</figcaption>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>"We have no idea whether we can stay in control."</blockquote>
+            <figcaption>Geoffrey Hinton, 2024</figcaption>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>
+              "AI has the potential to significantly improve many aspects of
+              society."
+            </blockquote>
+            <figcaption>Sam Altman, 2026</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section section-alt" id="timeline">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Timeline</p>
-            <h2>Major Moments in AI History</h2>
+      <section class="section exhibit-section" id="orientation">
+        <div class="grid-container exhibit-layout">
+          <aside class="artifact-rail">
+            <p class="eyebrow">Orientation Hall</p>
+            <h2>What Makes Intelligence Artificial?</h2>
+            <figure class="catalog-figure">
+              <img
+                src="./assets/AdobeStock_386294637.jpeg"
+                alt="Museum catalog artifact: tarnished brass automaton hand on a black polished plinth"
+              />
+              <figcaption>
+                Catalog 00 / Automaton Hand / Mechanism before intelligence
+              </figcaption>
+            </figure>
+            <p class="curator-note">
+              Before artificial intelligence became software, the dream of
+              thinking machinery appeared as mechanical imitation.
+            </p>
+          </aside>
+
+          <div class="exhibit-copy">
+            <p class="lead">
+              Artificial intelligence refers to computer systems designed to
+              perform tasks associated with human cognition: learning, reasoning,
+              perception, language, pattern recognition, and decision-making.
+            </p>
+            <p>
+              The field did not appear suddenly. It emerged from mathematics,
+              wartime computation, cognitive science, linguistics, and a
+              philosophical question that still shapes the exhibit: if a machine
+              can behave intelligently, how should society judge that behavior?
+            </p>
+            <div class="analysis-panel">
+              <span>Curatorial Thesis</span>
+              <p>
+                AI history is not a straight line of inventions. It is a record
+                of shifting definitions: from logic, to knowledge, to data, to
+                systems that participate in public life.
+              </p>
+            </div>
           </div>
+        </div>
+        <nav class="tour-nav" aria-label="Guided tour navigation">
+          <a class="tour-button tour-button-muted" href="#top">Previous Exhibit</a>
+          <a class="tour-button" href="#gallery-one">Next Exhibit</a>
+        </nav>
+      </section>
 
-          <div class="timeline">
-            <article class="timeline-item">
-              <span class="year">1950</span>
-              <h3>Alan Turing's Question</h3>
-              <p>
-                Alan Turing published a paper asking if machines could think. He
-                also introduced the idea behind the Turing Test.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="year">1956</span>
-              <h3>Dartmouth Conference</h3>
-              <p>
-                This conference is often considered the official starting point of
-                AI as a field of study.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="year">1980s</span>
-              <h3>Expert Systems</h3>
-              <p>
-                Expert systems became popular because they could follow rules to
-                make decisions in specialized areas such as medicine and business.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="year">2010s</span>
-              <h3>Deep Learning Growth</h3>
-              <p>
-                Better processors and larger datasets helped deep learning models
-                improve image recognition, speech recognition, and automation.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="year">Today</span>
-              <h3>Generative AI</h3>
-              <p>
-                Modern AI tools can generate text, images, music, and code,
-                changing how people work, learn, and create.
-              </p>
-            </article>
-          </div>
+      <section class="gallery-hero gallery-hero-one" id="gallery-one">
+        <div class="grid-container gallery-hero-grid">
+          <p class="eyebrow">Gallery 1</p>
+          <h2>The Birth of a Discipline</h2>
+          <p>
+            From Turing's imitation game to the 1956 Dartmouth workshop, AI
+            became a named research field with a daring premise: intelligence
+            could be described precisely enough for machines to simulate it.
+          </p>
         </div>
       </section>
 
-      <section class="section" id="impact">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Impact</p>
-            <h2>How AI Affects Society</h2>
-          </div>
+      <section class="section exhibit-section">
+        <div class="grid-container exhibit-layout">
+          <aside class="artifact-rail">
+            <p class="eyebrow">1950s-1960s</p>
+            <h2>Language Becomes the Test</h2>
+            <figure class="catalog-figure">
+              <img
+                src="./assets/AdobeStock_574643266.jpeg"
+                alt="Museum catalog artifact: reconstructed 1950s Turing Test terminal with keyboard and CRT asking Can machines think?"
+              />
+              <figcaption>
+                Catalog 01 / Turing Test Terminal / Behavioral intelligence
+              </figcaption>
+            </figure>
+            <p class="curator-note">
+              The earliest gallery asks visitors to treat conversation as an
+              exhibit object: observable, testable, and uncertain.
+            </p>
+          </aside>
 
-          <div class="impact-grid">
-            <article class="card">
-              <h3>Education</h3>
-              <p>
-                AI supports tutoring tools, language learning, research support,
-                and personalized study help for students.
-              </p>
-            </article>
-
-            <article class="card">
-              <h3>Healthcare</h3>
-              <p>
-                Doctors and researchers use AI to help analyze medical images,
-                monitor patients, and improve diagnostics.
-              </p>
-            </article>
-
-            <article class="card">
-              <h3>Everyday Life</h3>
-              <p>
-                Recommendation systems, virtual assistants, maps, and smart devices
-                all show how AI has become part of normal daily routines.
-              </p>
-            </article>
+          <div class="exhibit-copy">
+            <div class="timeline-list">
+              <article>
+                <span>1950</span>
+                <h3>Alan Turing Reframes the Question</h3>
+                <p>
+                  Turing's paper moved the debate away from vague definitions of
+                  thought and toward an observable test of machine behavior.
+                </p>
+              </article>
+              <article>
+                <span>1956</span>
+                <h3>Dartmouth Names the Field</h3>
+                <p>
+                  The Dartmouth Summer Research Project gathered researchers
+                  around the term artificial intelligence and gave the discipline
+                  its first institutional identity.
+                </p>
+              </article>
+              <article>
+                <span>1960s</span>
+                <h3>Early Optimism</h3>
+                <p>
+                  Programs solved algebra problems, played games, and manipulated
+                  language in limited settings, creating confidence that machine
+                  reasoning could scale quickly.
+                </p>
+              </article>
+            </div>
+            <figure class="inline-quote">
+              <blockquote>
+                "I propose to consider the question, 'Can machines think?'"
+              </blockquote>
+              <figcaption>Alan Turing, Computing Machinery and Intelligence</figcaption>
+            </figure>
           </div>
         </div>
+        <nav class="tour-nav" aria-label="Guided tour navigation">
+          <a class="tour-button tour-button-muted" href="#orientation">
+            Previous Exhibit
+          </a>
+          <a class="tour-button" href="#gallery-two">Next Exhibit</a>
+        </nav>
+      </section>
+
+      <section class="gallery-hero gallery-hero-two" id="gallery-two">
+        <div class="grid-container gallery-hero-grid">
+          <p class="eyebrow">Gallery 2</p>
+          <h2>Rules, Knowledge, and Winter</h2>
+          <p>
+            As early promises met technical limits, AI entered cycles of intense
+            investment and disappointment. The discipline learned that knowledge
+            was powerful, brittle, and expensive to encode by hand.
+          </p>
+        </div>
+      </section>
+
+      <section class="section exhibit-section">
+        <div class="grid-container exhibit-layout exhibit-layout-reverse">
+          <aside class="artifact-rail">
+            <p class="eyebrow">1970s-1990s</p>
+            <h2>When Knowledge Had to Be Written</h2>
+            <figure class="catalog-figure">
+              <img
+                src="./assets/AdobeStock_1666887383.jpeg"
+                alt="Museum catalog artifact: leather-bound Principles of Expert Systems textbook open on a rustic wooden table"
+              />
+              <figcaption>
+                Catalog 02 / Principles of Expert Systems / Encoded expertise
+              </figcaption>
+            </figure>
+            <p class="curator-note">
+              Expert systems made intelligence look archival: rules, manuals,
+              cases, and decision trees arranged into executable authority.
+            </p>
+          </aside>
+
+          <div class="exhibit-copy">
+            <div class="timeline-list">
+              <article>
+                <span>1970s</span>
+                <h3>The First AI Winter</h3>
+                <p>
+                  Funding slowed when ambitious systems failed outside narrow
+                  demonstrations. This period remains a lesson in scientific
+                  humility and technical constraint.
+                </p>
+              </article>
+              <article>
+                <span>1980s</span>
+                <h3>Expert Systems Enter Industry</h3>
+                <p>
+                  Rule-based systems captured specialist knowledge in fields such
+                  as medicine, finance, and manufacturing, making AI commercially
+                  visible even when general intelligence remained distant.
+                </p>
+              </article>
+              <article>
+                <span>1997</span>
+                <h3>Deep Blue Defeats Kasparov</h3>
+                <p>
+                  IBM's chess victory showed that focused computation could
+                  exceed elite human performance in a symbolic domain with clear
+                  rules.
+                </p>
+              </article>
+            </div>
+            <div class="analysis-panel">
+              <span>Key Insight</span>
+              <p>
+                The age of rules proved that knowledge can be encoded, but also
+                revealed how quickly encoded expertise becomes fragile when the
+                world refuses to fit a fixed rulebook.
+              </p>
+            </div>
+          </div>
+        </div>
+        <nav class="tour-nav" aria-label="Guided tour navigation">
+          <a class="tour-button tour-button-muted" href="#gallery-one">
+            Previous Exhibit
+          </a>
+          <a class="tour-button" href="#gallery-three">Next Exhibit</a>
+        </nav>
+      </section>
+
+      <section class="gallery-hero gallery-hero-three" id="gallery-three">
+        <div class="grid-container gallery-hero-grid">
+          <p class="eyebrow">Gallery 3</p>
+          <h2>Learning From Data</h2>
+          <p>
+            The center of gravity moved from hand-authored rules to statistical
+            learning. With larger datasets and stronger hardware, systems began
+            improving through exposure rather than explicit instruction.
+          </p>
+        </div>
+      </section>
+
+      <section class="section exhibit-section">
+        <div class="grid-container exhibit-layout">
+          <aside class="artifact-rail">
+            <p class="eyebrow">2000s-2010s</p>
+            <h2>Computation Becomes the Engine</h2>
+            <figure class="catalog-figure">
+              <img
+                src="./assets/AdobeStock_1990862864_Editorial_Use_Only.jpeg"
+                alt="Museum catalog artifact: illuminated NVIDIA H100 Tensor Core GPU within a glass fiber optic geometric array"
+              />
+              <figcaption>
+                Catalog 03 / Tensor Core / Infrastructure for learning
+              </figcaption>
+            </figure>
+            <p class="curator-note">
+              Deep learning turned data centers into laboratories where scale,
+              chips, and datasets became part of the intellectual method.
+            </p>
+          </aside>
+
+          <div class="exhibit-copy">
+            <div class="timeline-list">
+              <article>
+                <span>2000s</span>
+                <h3>Machine Learning Matures</h3>
+                <p>
+                  Search engines, recommendation systems, spam filters, and
+                  speech tools brought machine learning into everyday
+                  infrastructure.
+                </p>
+              </article>
+              <article>
+                <span>2012</span>
+                <h3>Deep Learning Breakthrough</h3>
+                <p>
+                  Neural networks trained on powerful graphics processors
+                  dramatically improved image recognition, helping launch the
+                  deep learning era.
+                </p>
+              </article>
+              <article>
+                <span>2016</span>
+                <h3>AlphaGo Changes the Frame</h3>
+                <p>
+                  DeepMind's AlphaGo defeated Lee Sedol, revealing that learning
+                  systems could discover strategies surprising even to expert
+                  humans.
+                </p>
+              </article>
+            </div>
+            <div class="analysis-panel">
+              <span>Key Insight</span>
+              <p>
+                In this gallery, intelligence becomes less like a rulebook and
+                more like an accumulated pattern: trained, tuned, and amplified
+                by computation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <nav class="tour-nav" aria-label="Guided tour navigation">
+          <a class="tour-button tour-button-muted" href="#gallery-two">
+            Previous Exhibit
+          </a>
+          <a class="tour-button" href="#gallery-four">Next Exhibit</a>
+        </nav>
+      </section>
+
+      <section class="gallery-hero gallery-hero-four" id="gallery-four">
+        <div class="grid-container gallery-hero-grid">
+          <p class="eyebrow">Gallery 4</p>
+          <h2>Generative Systems and Public Responsibility</h2>
+          <p>
+            Contemporary AI can generate language, images, code, sound, and
+            decisions at scale. The museum closes by asking not only what AI can
+            do, but who governs its consequences.
+          </p>
+        </div>
+      </section>
+
+      <section class="section exhibit-section">
+        <div class="grid-container exhibit-layout exhibit-layout-reverse">
+          <aside class="artifact-rail">
+            <p class="eyebrow">Contemporary Wing</p>
+            <h2>AI Becomes a Civic Question</h2>
+            <figure class="catalog-figure">
+              <img
+                src="./assets/AdobeStock_164314960.jpeg"
+                alt="Museum catalog artifact: fragmented human silhouette projected from streaming text and code fragments on a museum wall"
+              />
+              <figcaption>
+                Catalog 04 / Data Silhouette / Language as public infrastructure
+              </figcaption>
+            </figure>
+            <p class="curator-note">
+              The final artifact is not a machine alone. It is a human outline
+              shaped by language, data, labor, and governance.
+            </p>
+          </aside>
+
+          <div class="exhibit-copy">
+            <p class="lead">
+              Generative AI expanded the public imagination of machine
+              intelligence. It also made accuracy, labor, creativity, bias,
+              security, privacy, and democratic access part of the mainstream
+              conversation.
+            </p>
+            <div class="impact-list" aria-label="Areas of AI impact">
+              <article>
+                <span>01</span>
+                <h3>Education</h3>
+                <p>
+                  Adaptive tutoring, research support, writing feedback, and new
+                  questions about academic integrity.
+                </p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Healthcare</h3>
+                <p>
+                  Clinical imaging, drug discovery, patient monitoring, and the
+                  need for careful human oversight.
+                </p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Creative Work</h3>
+                <p>
+                  Text, image, music, and code generation reshape authorship,
+                  production, and design practice.
+                </p>
+              </article>
+            </div>
+            <figure class="inline-quote">
+              <blockquote>"We have no idea whether we can stay in control."</blockquote>
+              <figcaption>Geoffrey Hinton, Nobel Prize banquet speech</figcaption>
+            </figure>
+          </div>
+        </div>
+        <nav class="tour-nav final-tour-nav" aria-label="Guided tour navigation">
+          <a class="tour-button tour-button-muted" href="#gallery-three">
+            Previous Exhibit
+          </a>
+          <a class="tour-button" href="#top">Return to Entrance</a>
+        </nav>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-wrap">
-        <p>Built as a simple static HTML and CSS site for GitHub Pages.</p>
-        <a href="#top">Back to top</a>
+      <div class="grid-container footer-grid">
+        <p>History of AI Museum Exhibit Experience</p>
+        <p>Designed with an Editorial Modernist system for IS117.</p>
       </div>
     </footer>
   </body>
